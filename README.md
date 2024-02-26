@@ -1,13 +1,30 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates an hardhat project that uses a mainnet forking setup.
 
-Try running some of the following tasks:
+## Installation
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+```bash
+npm install
+```
+
+## Configuration
+
+Create an env file
+
+```bash
+touch .env
+```
+
+Add the following to the .env file
+
+```bash
+
+MAINET_ALCHEMY_API_KEY_URL=https://eth-mainnet.alchemyapi.io/v2/<your-alchemy-api-key>
+```
+
+## Usage
+
+```bash
+npx hardhat run scripts/sendUsdc.ts
 ```
